@@ -3,6 +3,8 @@
 require_once('src/model/comment.php');
 
 function addComment(string $postId, array $input) {
+    $author = null;
+    $comment = null;
 
     if (!empty($input['author']) && !empty($input['comment'])) {
         $author = $input['author'];
@@ -20,3 +22,6 @@ function addComment(string $postId, array $input) {
         header('Location: index.php?action=post&id=' . $postId);
     }
 }
+
+
+
