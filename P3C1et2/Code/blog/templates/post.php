@@ -34,6 +34,7 @@
 <?php foreach ($comments as $comment) { ?>
     <p><strong><?= htmlspecialchars($comment->author); ?></strong> le <?= $comment->frenchCreationDate; ?></p>
     <p><?= nl2br(htmlspecialchars($comment->comment)); ?></p>
+    <a href="index.php?action=editComment&id=<?= $comment->id ?>">Modifier</a> 
 <?php } ?>
 
 <?php $content = ob_get_clean(); ?>
