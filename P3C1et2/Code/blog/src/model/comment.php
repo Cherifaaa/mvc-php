@@ -1,5 +1,7 @@
 <?php
 
+namespace Application\Model\Comment;
+
 class Comment {
     public string $author;
     public string $frenchCreationDate;

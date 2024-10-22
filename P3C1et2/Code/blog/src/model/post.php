@@ -1,5 +1,7 @@
 <?php
 
+namespace Application\Model\Post;
+
 class PostRepository {
     public ?PDO $database = null; 
    public function dbConnect() {
